@@ -2,8 +2,7 @@ import React from "react";
 
 const ApprovedList = () => {
   return (
-    <>
-      <div className="main-content">
+    <>      
         <div className="page-content">
           <div className="container-fluid">
             <div className="card">
@@ -922,7 +921,7 @@ const ApprovedList = () => {
             </div>
           </div>
         </div>
-      </div>
+      
     </>
   );
 };

@@ -1,15 +1,18 @@
+import Admin from "../pages/Admin";
 import ApprovedList from "../pages/ApprovedList";
 import CompanyList from "../pages/CompanyList";
+import EnquiryList from "../pages/EnquiryList";
 import Login from "../pages/Login";
+import ProductEnquiryList from "../pages/ProductEnquiryList";
+import ProductList from "../pages/ProductList";
 
 const routes =[
-    { path:"/",  component:<Login />},
+    { path:"/",  component:<Admin />},
     {path:'CompanyList', component:<CompanyList />},
+    {path:'EnquiryList', component:<EnquiryList />},
     {path:'ApprovedList', component:<ApprovedList />},
-    // {path:'NanoCoolCoat', component : <NanoCoolCoat />},
-    // {path:'project', component : <Project />},
-    // {path:'blog', component: <Blogs />},
-    // {path:"contact", component: <ContactUs />}
+    {path:'ProductList', component:<ProductList />},
+    {path:'ProductEnquiryList', component:<ProductEnquiryList />}
     
 
 

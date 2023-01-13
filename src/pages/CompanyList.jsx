@@ -2,8 +2,7 @@ import React from "react";
 
 const CompanyList = () => {
   return (
-    <>
-      <div className="main-content">
+    <>      
         <div className="page-content">
           <div className="container-fluid">
             <div className="card">
@@ -957,7 +956,7 @@ const CompanyList = () => {
             {/* container-fluid */}
           </div>
         </div>
-      </div>
+      
     </>
   );
 };

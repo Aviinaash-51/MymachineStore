@@ -1,7 +1,9 @@
 import { getError } from '../utils/Errors';
 import { useForm } from 'react-hook-form';
+import { useState } from 'react';
 const Login = () => {
-  
+   const [email, setEmail] = useState('');
+
 
     //     // try {
           
@@ -73,21 +75,21 @@ const Login = () => {
                             className="form-control"
                             autoFocus
                             id="useremail"
-                            {...register("email", {
-                              required: "Please enter email",
+                            // {...register("email", {
+                            //   required: "Please enter email",
 
-                              pattern: {
-                                value:
-                                  /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/i,
-                                message: "Please enter valid email",
-                              },
-                            })}
+                            //   pattern: {
+                            //     value:
+                            //       /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/i,
+                            //     message: "Please enter valid email",
+                            //   },
+                            // })}
                           />
-                          {errors.email && (
+                          {/* {errors.email && (
                             <div className="text-danger">
                               {errors.email.message}
                             </div>
-                          )}
+                          )} */}
                         </div>
                         <div className="mb-3">
                           <div className="float-end">
@@ -108,13 +110,13 @@ const Login = () => {
                             <input
                               type="password"
                               className="form-control pe-5 password-input"
-                              {...register("password", {
-                                required: "Please enter password",
-                                pattern: {
-                                  // value: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/i,
-                                  message: "Please enter valid password",
-                                },
-                              })}
+                              // {...register("password", {
+                              //   required: "Please enter password",
+                              //   pattern: {
+                              //     // value: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/i,
+                              //     message: "Please enter valid password",
+                              //   },
+                              // })}
                               id="password-input"
                             />
                             <button
@@ -124,11 +126,11 @@ const Login = () => {
                             >
                               <i className="ri-eye-fill align-middle" />
                             </button>
-                            {errors.password && (
+                            {/* {errors.password && (
                               <div className="text-danger">
                                 {errors.password.message}
                               </div>
-                            )}
+                            )} */}
                           </div>
                         </div>
                         <div className="form-check">
